@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sources": [
+		"../../scss/custom.scss"
+	],
+	"sourcesContent": [
+		"$white: #f9ffff;\n\n$theme-colors: (\n    \"light\":      #ddf0f6,\n    \"dark\":       #050000,\n    \"primary\":    #313233,\n    \"secondary\":  #7452e5,\n    \"info\":       #eeb0d0,\n    \"success\":    #22a55c,\n    \"warning\":    #e6ca22,\n    \"danger\":     #f3111a,\n);\n\n/* Remove the navbar's default margin-bottom and rounded borders */ \n.navbar {\n    margin-bottom: 0;\n    border-radius: 0;\n    }\n    \n    /* Add a gray background color and some padding to the footer */\nfooter {\n    background-color: #f2f2f2;\n    padding: 25px;\n}\n\n\n.jumbotron { \n    background-image: url(../inspiration/37550928362_040bbaaac8_o.jpeg);\n    background-color: none;\n  }"
+	],
+	"names": [],
+	"mappings": "AAcA,AAAA,OAAO,AAAC,CACJ,aAAa,CAAE,CAAC,CAChB,aAAa,CAAE,CAAC,CACf,AAGL,AAAA,MAAM,AAAC,CACH,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CAChB,AAGD,AAAA,UAAU,AAAC,CACP,gBAAgB,CAAE,iDAAiD,CACnE,gBAAgB,CAAE,IAAI,CACvB"
+}
