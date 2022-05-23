@@ -6,8 +6,18 @@ $white: #f9ffff;
     background-color: black;
 }
 
-.jumbotron-fluid {
-    height: 500px;
-    max-height: 500px;
+.jumbotron {
+    //background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%); 
+    background: grey;
+    background-image: url(../../inspiration/cc/15362604233_MichaelWong_ws2.png);
+    background-size: cover;
+    min-height: 300px;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
+.bg { 
+
+}
