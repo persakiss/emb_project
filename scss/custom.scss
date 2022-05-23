@@ -23,8 +23,10 @@ footer {
     padding: 25px;
 }
 
-
 .jumbotron { 
-    background-image: url(../inspiration/37550928362_040bbaaac8_o.jpeg);
-    background-color: none;
+    // background-image: url(../../inspiration/IMG_1657.png);
+    background-color: grey;
+    display: flex;
+    background-size: cover;
+    height: 100%;
   }
