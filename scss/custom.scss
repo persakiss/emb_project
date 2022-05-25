@@ -1,23 +1,100 @@
 $white: #f9ffff;
 
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 
-.navbar {
-    background-color: black;
+
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
 }
 
-.jumbotron {
-    //background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%); 
-    background: grey;
-    background-image: url(../../inspiration/cc/15362604233_MichaelWong_ws2.png);
-    background-size: cover;
-    min-height: 300px;
+.carousel-item:nth-child(1) {
+  background-image: url('/inspiration/cc/15362604233_MichaelWong_ws2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+.carousel-item:nth-child(2) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.bg { 
-
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 50vh;
+  }
 }
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+
+@import 'mdb-ui-kit/css/mdb.min.css';
+
+
+        /* Carousel styling */
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+        .carousel-item:nth-child(1) {
+          background-image: url('/inspiration/cc/15362604233_MichaelWong_ws2.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(2) {
+          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(3) {
+          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 50vh;
+          }
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+
+        .bg-blue {
+            background-color: #09244D;
+        }

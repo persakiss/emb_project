@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "private": true,
   "description": "Demo project for building a Bootstrap powered site via npm.",
-  "author": "mdo",
+  "author": "√o",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.0",
     "jquery": "^3.6.0",
+    "mdb-ui-kit": "^4.1.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
