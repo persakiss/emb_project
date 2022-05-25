@@ -1,100 +1,61 @@
 $white: #f9ffff;
+$enable-negative-margins: true;
 
-// @import "bootstrap/scss/bootstrap";
-
+// @import "bootstrap/scss/bootstrap"; MDB is sufficient
 
 /* Carousel styling */
 #introCarousel,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
-  height: 100vh;
+    height: 100vh;
 }
 
 .carousel-item:nth-child(1) {
-  background-image: url('/inspiration/cc/15362604233_MichaelWong_ws2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(2) {
-  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(3) {
-  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background-image: url('/assets/img/pro_office.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-  #introCarousel {
-    margin-top: -58.59px;
-  }
-  #introCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: 50vh;
-  }
+.carousel-item:nth-child(2) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* NOTE: REMOVING RESOLVED FULL SIZING ON MOBILE AND APPEARANCE OF NAV TOGGLE
+/* "@media (min-width: 992px) {" */
+@media (min-width: 400px) {
+    #introCarousel {
+        margin-top: -20.59px;
+    }
+
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+        height: 50vh;
+    }
 }
 
 .navbar .nav-link {
-  color: #fff !important;
+    color: #fff !important;
 }
-
 
 @import 'mdb-ui-kit/css/mdb.min.css';
 
 
-        /* Carousel styling */
-        #introCarousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item.active {
-          height: 100vh;
-        }
 
-        .carousel-item:nth-child(1) {
-          background-image: url('/inspiration/cc/15362604233_MichaelWong_ws2.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-        .carousel-item:nth-child(2) {
-          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-        .carousel-item:nth-child(3) {
-          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-
-        /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
-          #introCarousel {
-            margin-top: -58.59px;
-          }
-          #introCarousel,
-          .carousel-inner,
-          .carousel-item,
-          .carousel-item.active {
-            height: 50vh;
-          }
-        }
-
-        .navbar .nav-link {
-          color: #fff !important;
-        }
-
-        .bg-blue {
-            background-color: #09244D;
-        }
+/* If we lose nav-bar transparency, try to bring the styles in the sheet to troubleshoot. */
+.bg-blue {
+    background-color: #09244D;
+}

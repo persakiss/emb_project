@@ -22,61 +22,12 @@
     <!--Main Navigation-->
     <header>
       <style>
-        /* Carousel styling */
-        #introCarousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item.active {
-          height: 100vh;
-        }
 
-        .carousel-item:nth-child(1) {
-          background-image: url('/assets/img/pro_office.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-        .carousel-item:nth-child(2) {
-          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-        .carousel-item:nth-child(3) {
-          background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-        }
-
-        /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
-          #introCarousel {
-            margin-top: -58.59px;
-          }
-          #introCarousel,
-          .carousel-inner,
-          .carousel-item,
-          .carousel-item.active {
-            height: 50vh;
-          }
-        }
-
-        .navbar .nav-link {
-          color: #fff !important;
-        }
       </style>
+
       <!-- Navbar -->
-
-      <!-- Reference 
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>-->
-
-      <nav class="navbar navbar-dark d-none d-lg-block navbar-collapse navbar-expand-lg bg-blue hidden-lg-down"
+      <!-- nav class removed "d-none d-lg-block", with the @media min-width value at 992px-->
+      <nav class="navbar navbar-dark navbar-collapse navbar-expand-xl bg-blue"
         style="z-index: 2000;">
         <div class="container-fluid bg-blue">
           <!-- Navbar brand -->
@@ -191,7 +142,8 @@
                     <a class="dropdown-item" href="#">Advice for travelers</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Criminal record certificate</a>
+                    <a class="dropdown-item" href="#">Criminal record
+                      certificate</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Consular fees</a>
@@ -335,13 +287,92 @@
         <!--Main layout-->
         <main class="mt-5">
           <div class="container">
+
+
+
+
+            <!--Section: Content-->
+            <section class="text-center">
+              <h4 class="mb-5"><strong>News and Information</strong></h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="assets/img/news_2_mfa_01_6.jpeg"
+                        class="img-fluid"
+                        />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251,
+                          251, 251, 0.15);"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Republic of Artsakh FM meets with Heads of the Parliamentary Factions</h5>
+                      <p class="card-text">On April 26, a meeting was held between Minister Babayan and members of parliament. A wide range of issues related to the recent regional developments, the settlement of the Azerbaijani-Karabagh conflict and the foreign policy of Artsakh were discussed.
+                      </p>
+                      <a href="#!" class="btn btn-primary d-none">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="assets/img/news_1_babayan_ignatev.png"
+                        class="img-fluid"
+                        />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251,
+                          251, 251, 0.15);"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Foreign Ministers of Repubic of Artsakh and PMR Hold Discussions</h5>
+                      <p class="card-text">Minister Babayan condemned the terrorist attacks on a number of PMR state structures committed the day before, expressing solidarity with the fraternal Pridnestrovian people on behalf of the authorities and people of Artsakh.
+                      </p>
+                      <a href="#!" class="btn btn-primary d-none">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple"
+                      data-mdb-ripple-color="light">
+                      <img
+                        src="assets/img/news_3_mfa-01.jpeg"
+                        class="img-fluid"
+                        />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251,
+                          251, 251, 0.15);"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Republic of Artsakh Foreign Minister Meets with Students of the Diplomatic School of the Foreign Ministry of Armenia</h5>
+                      <p class="card-text">Issues related to global and regional processes, the Azerbaijani-Karabakh conflict, the foreign policy of the two Armenian Republics and a range of other topics were discussed during the meeting.
+                      </p>
+                      <a href="#!" class="btn btn-primary d-none">Button</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--Section: Content-->
+
+            <hr class="my-5" />
+
             <!--Section: Content-->
             <section>
               <div class="row">
                 <div class="col-md-6 gx-5 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-2-strong"
+                  <div class="bg-image hover-overlay ripple shadow-2-strong mt-3"
                     data-mdb-ripple-color="light">
-                    <img src="https://mdbootstrap.com/img/new/slides/031.jpg"
+                    <img src="assets/img/pillars.png"
                       class="img-fluid" />
                     <a href="#!">
                       <div class="mask" style="background-color: rgba(251, 251,
@@ -351,7 +382,32 @@
                 </div>
 
                 <div class="col-md-6 gx-5 mb-4">
-                  <h4><strong>Facilis consequatur eligendi</strong></h4>
+                  <h4><strong>Permanent Representation of the Republic of
+                      Artsakh in the Republic of Armenia</strong></h4>
+
+
+                  <dl class="row">
+                    <dt class="col-sm-3 text-truncate">Representative</dt>
+                    <dd class="col-sm-9">Sergey Ghazaryan</dd>
+
+                    <dt class="col-sm-3">Address</dt>
+                    <dd class="col-sm-9">17a/2 Nairi Zarian Street, </dd>
+                    <dd class="col-sm-9 offset-sm-3 mt-n2">Yerevan, Republic of Armenia 0051</dd>
+
+                    <dt class="col-sm-3">Telephone</dt>
+                    <dd class="col-sm-9">+374 10 24 99 28</dd>
+
+                    <dt class="col-sm-3 text-truncate">Consular Division</dt>
+                    <dd class="col-sm-9">+374 10 24 97 05</dd>
+
+                    <dt class="col-sm-3">Fax</dt>
+                    <dd class="col-sm-9">+374 10 24 99 25</dd>
+
+                    <dt class="col-sm-3">Email</dt>
+                    <dd class="col-sm-9">yerevan@mfa.nkr.am</dd>
+                  </dl>
+
+                  <!--
                   <p class="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Facilis consequatur
@@ -369,90 +425,7 @@
                     alias, unde optio accusantium soluta, iusto molestiae
                     adipisci et?
                   </p>
-                </div>
-              </div>
-            </section>
-            <!--Section: Content-->
-
-            <hr class="my-5" />
-
-            <!--Section: Content-->
-            <section class="text-center">
-              <h4 class="mb-5"><strong>Facilis consequatur eligendi</strong></h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple"
-                      data-mdb-ripple-color="light">
-                      <img
-                        src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
-                        class="img-fluid"
-                        />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251,
-                          251, 251, 0.15);"></div>
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the
-                        card's content.
-                      </p>
-                      <a href="#!" class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple"
-                      data-mdb-ripple-color="light">
-                      <img
-                        src="https://mdbootstrap.com/img/new/standard/nature/023.jpg"
-                        class="img-fluid"
-                        />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251,
-                          251, 251, 0.15);"></div>
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the
-                        card's content.
-                      </p>
-                      <a href="#!" class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple"
-                      data-mdb-ripple-color="light">
-                      <img
-                        src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
-                        class="img-fluid"
-                        />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251,
-                          251, 251, 0.15);"></div>
-                      </a>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the
-                        card's content.
-                      </p>
-                      <a href="#!" class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
+                  -->
                 </div>
               </div>
             </section>
@@ -462,7 +435,7 @@
 
             <!--Section: Content-->
             <section class="mb-5">
-              <h4 class="mb-5 text-center"><strong>Facilis consequatur eligendi</strong></h4>
+              <h4 class="mb-5 text-center"><strong>Subscribe to Updates</strong></h4>
               <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
                   <form>
@@ -553,7 +526,7 @@
         </main>
         <!--Main layout-->
 
-        <!--Footer-->
+        <!--Footer
         <footer class="bg-light text-lg-start">
           <div class="py-4 text-center">
             <a
@@ -571,14 +544,14 @@
               target="_blank">
               Download MDB UI KIT
             </a>
-          </div>
+          </div>-->
 
           <hr class="m-0" />
 
           <div class="text-center py-4 align-items-center">
-            <p>Follow MDB on social media</p>
+            <p>Follow us on social media</p>
             <a
-              href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+              href="#"
               class="btn btn-primary m-1"
               role="button"
               rel="nofollow"
@@ -586,7 +559,7 @@
               <i class="fab fa-youtube"></i>
             </a>
             <a
-              href="https://www.facebook.com/mdbootstrap"
+              href="#"
               class="btn btn-primary m-1"
               role="button"
               rel="nofollow"
@@ -594,7 +567,7 @@
               <i class="fab fa-facebook-f"></i>
             </a>
             <a
-              href="https://twitter.com/MDBootstrap"
+              href="#"
               class="btn btn-primary m-1"
               role="button"
               rel="nofollow"
@@ -602,7 +575,7 @@
               <i class="fab fa-twitter"></i>
             </a>
             <a
-              href="https://github.com/mdbootstrap/mdb-ui-kit"
+              href="#"
               class="btn btn-primary m-1"
               role="button"
               rel="nofollow"
@@ -614,8 +587,9 @@
           <!-- Copyright -->
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0,
             0.2);">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            This website is distributed by the Office of the Nagorno Karabakh
+            Republic in Armenia on behalf of the Government of the Nagorno
+            Karabakh Republic.
           </div>
           <!-- Copyright -->
         </footer>
