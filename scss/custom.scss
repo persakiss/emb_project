@@ -1,7 +1,24 @@
+
+@import 'mdb-ui-kit/css/mdb.min.css';
+
 $white: #f9ffff;
 $enable-negative-margins: true;
 
-@media ()
+.btn-primary {
+    background-color: #09244D;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-color: #09244D;
+}
+
+.form-check-input:checked {
+    background-color: #09244D;
+}
+
+.form-check-input:focus {
+    border-color: #09244D;
+}
 
 // @import "bootstrap/scss/bootstrap"; MDB is sufficient
 
@@ -53,7 +70,6 @@ $enable-negative-margins: true;
     color: #fff !important;
 }
 
-@import 'mdb-ui-kit/css/mdb.min.css';
 
 
 
@@ -61,3 +77,4 @@ $enable-negative-margins: true;
 .bg-blue {
     background-color: #09244D;
 }
+
